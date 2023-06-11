@@ -4,3 +4,8 @@ window:
 cursor:
   style:
     shape: Block
+
+font:
+  normal:
+    family: HackNerdFontMono
+    style: Regular
