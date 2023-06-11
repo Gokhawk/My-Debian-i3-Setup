@@ -9,9 +9,14 @@ exec --no-startup-id redshift -l 41.01384:28.94966
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh --forest
 exec --no-startup-id picom --config ~/.config/picomi3/picom.conf
 exec --no-startup-id  nitrogen --restore
-
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id xset s off
+exec --no-startup-id xset -dpms
 # num lock activated
 exec --no-startup-id numlockx on
+
+#File manager shortcut
+bindsym $mod+t exec thunar 
 
 #screenshot
 bindsym $mod+p exec xfce4-screenshooter  
@@ -108,7 +113,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 
-gaps inner 20
+gaps inner 10
 gaps outer 10
 
 
