@@ -5,7 +5,7 @@ font pango:JetBrains Mono NL Regular 10
 ###############
 # Autostart #
 ###############
-exec --no-startup-id redshift -l 41.01384:28.94966
+exec --no-startup-id redshift -l 41.01384:28.94966  # U can change this to your city 
 exec_always --no-startup-id bash ~/.config/polybar/launch.sh --forest
 exec --no-startup-id picom --config ~/.config/picomi3/picom.conf
 exec --no-startup-id  nitrogen --restore
@@ -19,7 +19,7 @@ exec --no-startup-id numlockx on
 bindsym $mod+t exec thunar 
 
 #screenshot
-bindsym $mod+p exec xfce4-screenshooter  
+bindsym $mod+p exec flameshot gui  # U can change this to your screenshot app 
 
 # Lock Screen 
 bindsym $mod+x exec betterlockscreen -l
@@ -35,7 +35,7 @@ for_window [window_role="task_dialog"] floating enable
 workspace_layout default
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty  # U can change this to your preferred terminal 
 
 # kill focused window
 bindsym $mod+q kill
